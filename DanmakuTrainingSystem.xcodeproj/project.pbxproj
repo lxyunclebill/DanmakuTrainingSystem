@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2B242B361976137900EFE4CF /* picture.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 2B242B351976137900EFE4CF /* picture.atlas */; };
 		2BB1A37819318DC400AFB0FF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BB1A37719318DC400AFB0FF /* Foundation.framework */; };
 		2BB1A37A19318DC400AFB0FF /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BB1A37919318DC400AFB0FF /* CoreGraphics.framework */; };
 		2BB1A37C19318DC400AFB0FF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BB1A37B19318DC400AFB0FF /* UIKit.framework */; };
@@ -16,14 +17,19 @@
 		2BB1A38A19318DC400AFB0FF /* LXYAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BB1A38919318DC400AFB0FF /* LXYAppDelegate.m */; };
 		2BB1A38D19318DC400AFB0FF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2BB1A38B19318DC400AFB0FF /* Main.storyboard */; };
 		2BB1A39019318DC400AFB0FF /* LXYViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BB1A38F19318DC400AFB0FF /* LXYViewController.m */; };
-		2BB1A39319318DC400AFB0FF /* LXYMyScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BB1A39219318DC400AFB0FF /* LXYMyScene.m */; };
-		2BB1A39519318DC400AFB0FF /* Spaceship.png in Resources */ = {isa = PBXBuildFile; fileRef = 2BB1A39419318DC400AFB0FF /* Spaceship.png */; };
 		2BB1A39719318DC400AFB0FF /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2BB1A39619318DC400AFB0FF /* Images.xcassets */; };
 		2BB1A39E19318DC400AFB0FF /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BB1A39D19318DC400AFB0FF /* XCTest.framework */; };
 		2BB1A39F19318DC400AFB0FF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BB1A37719318DC400AFB0FF /* Foundation.framework */; };
 		2BB1A3A019318DC400AFB0FF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BB1A37B19318DC400AFB0FF /* UIKit.framework */; };
 		2BB1A3A819318DC400AFB0FF /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2BB1A3A619318DC400AFB0FF /* InfoPlist.strings */; };
 		2BB1A3AA19318DC400AFB0FF /* DanmakuTrainingSystemTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BB1A3A919318DC400AFB0FF /* DanmakuTrainingSystemTests.m */; };
+		2BB1A3C11931901600AFB0FF /* LXYEnemyBullet.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BB1A3C01931901600AFB0FF /* LXYEnemyBullet.m */; };
+		2BB1A3C41931902B00AFB0FF /* LXYPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BB1A3C31931902B00AFB0FF /* LXYPlayer.m */; };
+		2BB1A3C71931903E00AFB0FF /* LXYPlayerBullet.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BB1A3C61931903E00AFB0FF /* LXYPlayerBullet.m */; };
+		2BB1A3CA1931904E00AFB0FF /* LXYEnemy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BB1A3C91931904E00AFB0FF /* LXYEnemy.m */; };
+		2BB1A3CD193190BD00AFB0FF /* LXYStageScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BB1A3CC193190BD00AFB0FF /* LXYStageScene.m */; };
+		2BB1A3D01931918900AFB0FF /* LXYChangeStageScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BB1A3CF1931918900AFB0FF /* LXYChangeStageScene.m */; };
+		2BB1A3D3193191A100AFB0FF /* LXYGameOverScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BB1A3D2193191A100AFB0FF /* LXYGameOverScene.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +43,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2B242B351976137900EFE4CF /* picture.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = picture.atlas; sourceTree = "<group>"; };
 		2BB1A37419318DC400AFB0FF /* DanmakuTrainingSystem.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DanmakuTrainingSystem.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2BB1A37719318DC400AFB0FF /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		2BB1A37919318DC400AFB0FF /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -51,15 +58,28 @@
 		2BB1A38C19318DC400AFB0FF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2BB1A38E19318DC400AFB0FF /* LXYViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LXYViewController.h; sourceTree = "<group>"; };
 		2BB1A38F19318DC400AFB0FF /* LXYViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LXYViewController.m; sourceTree = "<group>"; };
-		2BB1A39119318DC400AFB0FF /* LXYMyScene.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LXYMyScene.h; sourceTree = "<group>"; };
-		2BB1A39219318DC400AFB0FF /* LXYMyScene.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LXYMyScene.m; sourceTree = "<group>"; };
-		2BB1A39419318DC400AFB0FF /* Spaceship.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Spaceship.png; sourceTree = "<group>"; };
 		2BB1A39619318DC400AFB0FF /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		2BB1A39C19318DC400AFB0FF /* DanmakuTrainingSystemTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DanmakuTrainingSystemTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2BB1A39D19318DC400AFB0FF /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		2BB1A3A519318DC400AFB0FF /* DanmakuTrainingSystemTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DanmakuTrainingSystemTests-Info.plist"; sourceTree = "<group>"; };
 		2BB1A3A719318DC400AFB0FF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		2BB1A3A919318DC400AFB0FF /* DanmakuTrainingSystemTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DanmakuTrainingSystemTests.m; sourceTree = "<group>"; };
+		2BB1A3BF1931901600AFB0FF /* LXYEnemyBullet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LXYEnemyBullet.h; sourceTree = "<group>"; };
+		2BB1A3C01931901600AFB0FF /* LXYEnemyBullet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXYEnemyBullet.m; sourceTree = "<group>"; };
+		2BB1A3C21931902B00AFB0FF /* LXYPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LXYPlayer.h; sourceTree = "<group>"; };
+		2BB1A3C31931902B00AFB0FF /* LXYPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXYPlayer.m; sourceTree = "<group>"; };
+		2BB1A3C51931903E00AFB0FF /* LXYPlayerBullet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LXYPlayerBullet.h; sourceTree = "<group>"; };
+		2BB1A3C61931903E00AFB0FF /* LXYPlayerBullet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXYPlayerBullet.m; sourceTree = "<group>"; };
+		2BB1A3C81931904E00AFB0FF /* LXYEnemy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LXYEnemy.h; sourceTree = "<group>"; };
+		2BB1A3C91931904E00AFB0FF /* LXYEnemy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXYEnemy.m; sourceTree = "<group>"; };
+		2BB1A3CB193190BD00AFB0FF /* LXYStageScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LXYStageScene.h; sourceTree = "<group>"; };
+		2BB1A3CC193190BD00AFB0FF /* LXYStageScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXYStageScene.m; sourceTree = "<group>"; };
+		2BB1A3CE1931918900AFB0FF /* LXYChangeStageScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LXYChangeStageScene.h; sourceTree = "<group>"; };
+		2BB1A3CF1931918900AFB0FF /* LXYChangeStageScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXYChangeStageScene.m; sourceTree = "<group>"; };
+		2BB1A3D1193191A100AFB0FF /* LXYGameOverScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LXYGameOverScene.h; sourceTree = "<group>"; };
+		2BB1A3D2193191A100AFB0FF /* LXYGameOverScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXYGameOverScene.m; sourceTree = "<group>"; };
+		2BBCC7671942363C00E7C6FB /* VectorCalculateHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VectorCalculateHeader.h; sourceTree = "<group>"; };
+		2BCB0A871939C1B400DCD13A /* BitMaskHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BitMaskHeader.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,14 +141,13 @@
 		2BB1A37F19318DC400AFB0FF /* DanmakuTrainingSystem */ = {
 			isa = PBXGroup;
 			children = (
+				2BB1A3B819318F0A00AFB0FF /* TheScenesOfStage */,
+				2BB1A3B719318EE700AFB0FF /* TheClassesOfSpriteNode */,
 				2BB1A38819318DC400AFB0FF /* LXYAppDelegate.h */,
 				2BB1A38919318DC400AFB0FF /* LXYAppDelegate.m */,
 				2BB1A38B19318DC400AFB0FF /* Main.storyboard */,
 				2BB1A38E19318DC400AFB0FF /* LXYViewController.h */,
 				2BB1A38F19318DC400AFB0FF /* LXYViewController.m */,
-				2BB1A39119318DC400AFB0FF /* LXYMyScene.h */,
-				2BB1A39219318DC400AFB0FF /* LXYMyScene.m */,
-				2BB1A39419318DC400AFB0FF /* Spaceship.png */,
 				2BB1A39619318DC400AFB0FF /* Images.xcassets */,
 				2BB1A38019318DC400AFB0FF /* Supporting Files */,
 			);
@@ -138,10 +157,14 @@
 		2BB1A38019318DC400AFB0FF /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				2B242B351976137900EFE4CF /* picture.atlas */,
+				2BB1A3B419318E1900AFB0FF /* Sounds */,
 				2BB1A38119318DC400AFB0FF /* DanmakuTrainingSystem-Info.plist */,
 				2BB1A38219318DC400AFB0FF /* InfoPlist.strings */,
 				2BB1A38519318DC400AFB0FF /* main.m */,
 				2BB1A38719318DC400AFB0FF /* DanmakuTrainingSystem-Prefix.pch */,
+				2BCB0A871939C1B400DCD13A /* BitMaskHeader.h */,
+				2BBCC7671942363C00E7C6FB /* VectorCalculateHeader.h */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -162,6 +185,41 @@
 				2BB1A3A619318DC400AFB0FF /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2BB1A3B419318E1900AFB0FF /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Sounds;
+			sourceTree = "<group>";
+		};
+		2BB1A3B719318EE700AFB0FF /* TheClassesOfSpriteNode */ = {
+			isa = PBXGroup;
+			children = (
+				2BB1A3C21931902B00AFB0FF /* LXYPlayer.h */,
+				2BB1A3C31931902B00AFB0FF /* LXYPlayer.m */,
+				2BB1A3C51931903E00AFB0FF /* LXYPlayerBullet.h */,
+				2BB1A3C61931903E00AFB0FF /* LXYPlayerBullet.m */,
+				2BB1A3C81931904E00AFB0FF /* LXYEnemy.h */,
+				2BB1A3C91931904E00AFB0FF /* LXYEnemy.m */,
+				2BB1A3BF1931901600AFB0FF /* LXYEnemyBullet.h */,
+				2BB1A3C01931901600AFB0FF /* LXYEnemyBullet.m */,
+			);
+			name = TheClassesOfSpriteNode;
+			sourceTree = "<group>";
+		};
+		2BB1A3B819318F0A00AFB0FF /* TheScenesOfStage */ = {
+			isa = PBXGroup;
+			children = (
+				2BB1A3CB193190BD00AFB0FF /* LXYStageScene.h */,
+				2BB1A3CC193190BD00AFB0FF /* LXYStageScene.m */,
+				2BB1A3CE1931918900AFB0FF /* LXYChangeStageScene.h */,
+				2BB1A3CF1931918900AFB0FF /* LXYChangeStageScene.m */,
+				2BB1A3D1193191A100AFB0FF /* LXYGameOverScene.h */,
+				2BB1A3D2193191A100AFB0FF /* LXYGameOverScene.m */,
+			);
+			name = TheScenesOfStage;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -209,9 +267,12 @@
 			isa = PBXProject;
 			attributes = {
 				CLASSPREFIX = LXY;
-				LastUpgradeCheck = 0510;
+				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = "林 轩宇";
 				TargetAttributes = {
+					2BB1A37319318DC400AFB0FF = {
+						DevelopmentTeam = D3ND47Q3HF;
+					};
 					2BB1A39B19318DC400AFB0FF = {
 						TestTargetID = 2BB1A37319318DC400AFB0FF;
 					};
@@ -241,9 +302,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2B242B361976137900EFE4CF /* picture.atlas in Resources */,
 				2BB1A38419318DC400AFB0FF /* InfoPlist.strings in Resources */,
 				2BB1A39719318DC400AFB0FF /* Images.xcassets in Resources */,
-				2BB1A39519318DC400AFB0FF /* Spaceship.png in Resources */,
 				2BB1A38D19318DC400AFB0FF /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -263,9 +324,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2BB1A39319318DC400AFB0FF /* LXYMyScene.m in Sources */,
+				2BB1A3CA1931904E00AFB0FF /* LXYEnemy.m in Sources */,
+				2BB1A3C41931902B00AFB0FF /* LXYPlayer.m in Sources */,
+				2BB1A3D3193191A100AFB0FF /* LXYGameOverScene.m in Sources */,
+				2BB1A3CD193190BD00AFB0FF /* LXYStageScene.m in Sources */,
+				2BB1A3C71931903E00AFB0FF /* LXYPlayerBullet.m in Sources */,
 				2BB1A38A19318DC400AFB0FF /* LXYAppDelegate.m in Sources */,
 				2BB1A38619318DC400AFB0FF /* main.m in Sources */,
+				2BB1A3D01931918900AFB0FF /* LXYChangeStageScene.m in Sources */,
+				2BB1A3C11931901600AFB0FF /* LXYEnemyBullet.m in Sources */,
 				2BB1A39019318DC400AFB0FF /* LXYViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -334,6 +401,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -391,11 +459,16 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "DanmakuTrainingSystem/DanmakuTrainingSystem-Prefix.pch";
 				INFOPLIST_FILE = "DanmakuTrainingSystem/DanmakuTrainingSystem-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "Unclebill.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				SPRITEKIT_TEXTURE_ATLAS_OUTPUT = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -405,11 +478,16 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "DanmakuTrainingSystem/DanmakuTrainingSystem-Prefix.pch";
 				INFOPLIST_FILE = "DanmakuTrainingSystem/DanmakuTrainingSystem-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "Unclebill.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				SPRITEKIT_TEXTURE_ATLAS_OUTPUT = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -430,6 +508,7 @@
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = "DanmakuTrainingSystemTests/DanmakuTrainingSystemTests-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "Unclebill.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
@@ -448,6 +527,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "DanmakuTrainingSystem/DanmakuTrainingSystem-Prefix.pch";
 				INFOPLIST_FILE = "DanmakuTrainingSystemTests/DanmakuTrainingSystemTests-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "Unclebill.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
@@ -473,6 +553,7 @@
 				2BB1A3AF19318DC400AFB0FF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2BB1A3B019318DC400AFB0FF /* Build configuration list for PBXNativeTarget "DanmakuTrainingSystemTests" */ = {
 			isa = XCConfigurationList;
@@ -481,6 +562,7 @@
 				2BB1A3B219318DC400AFB0FF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
